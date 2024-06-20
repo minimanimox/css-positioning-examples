@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    padding: 32px 32px;
+    min-height: 80px;
+    background: #1f1f1f;
+}
+
+nav > a {
+    vertical-align: bottom;
+}
+
+nav img {
+    max-height: 48px;
+    background-color: white;
+}
+
+nav ul,
+nav ul li,
+.spacer {
+    display: inline-block;
+}
+
+.spacer {
+    /* Parent width - Logo width - Menu <ul> width */
+    width: calc(100% - 132px - 276px);
+}
+
+nav ul {
+    margin-bottom: 15px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+#last-item {
+    margin-right: 0px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: rgb(160, 225, 243);
+}
+
+nav ul li a:hover {
+    color: rgb(229, 145, 0);
+}
+
+nav ul li a:active {
+    color: rgb(92, 229, 0);
+}
+
+#current-page {
+    color: aquamarine;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bigcontainer {
+    /*adjusting aside block on the right side*/
+    text-align: right; 
+}
+
+main {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    height: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:#fff;
+    text-align: center;
+}
+
+aside {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    height: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #5c5b5b;
+    text-align: center;
+    line-height: 2.5;
+}
+
+td h2 {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    vertical-align: top;
+}
+
+footer {
+    padding: 10px 10px;
+    background: #1f1f1f;
+    text-align: center;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+footer p {
+    color: #fff;
+    display: block;
+}
+
+footer .line {
+    border-top: 1px solid #ccc;
+    width: 80%; /* 선의 길이를 50%로 설정 */
+    margin: 20px auto; /* 가운데 정렬 */
+}
+
+ul li a:link,
+ul li a:visited {
+    color: rgb(160, 225, 243);
+}
+
+ul li a:hover {
+    color: rgb(229, 145, 0);
+}
+
+ul li a:active {
+    color: rgb(92, 229, 0);
+}
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 10px;
+    left: calc(100% - 40px); /* button position */
+    max-width: 30px;
+    width: 100%;
+    font-size: 12px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: rgb(100, 100, 100);
+    padding: .5px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #7dbbf1;
+}
